@@ -124,6 +124,51 @@ p {
   outline: 0;
 }
 
-.btn .link-arrow {
+.btn, a {
   color: #fff;
+}
+
+/* Grid */
+
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1X2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Blocks */
+
+.block {
+  padding: 6rem 2rem;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.block__header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.block--dark h1,
+.block--dark h2,
+.block--dark h3 {
+  color: #fff;
+}
+
+.block--dark {
+  background: rgb(2,4,28);
+  background: linear-gradient(90deg, rgba(2,4,28,1) 26%, rgba(27,12,17,1) 100%, rgba(0,212,255,1) 100%);
+  color: #cbd7db;
+}
+
+.block__image {
+  max-width: 500px;
+  border-radius: 7px;
 }
