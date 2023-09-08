@@ -237,3 +237,28 @@ p {
 .icon--white {
   fill: #fff;
 }
+
+/* Media */
+
+.media {
+  margin-bottom: 1rem;
+  background: rgb(2,4,28);
+  background: linear-gradient(90deg, rgba(2,4,28,1) 26%, rgba(27,12,17,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+.media__title {
+  color: #fff;
+  margin: 0;
+}
+
+.text--primary {
+  color: var(--color-primary);
+}
+
+.text--secondary {
+  color: var(--color-secondary);
+}
+
+.text--accent {
+  color: var(--color-accent);
+}
