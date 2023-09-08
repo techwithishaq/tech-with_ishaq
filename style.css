@@ -102,7 +102,7 @@ p {
 .link-arrow::after {
   content: "-->";
   margin-left: 10px;
-  transition: all .3s;
+  transition: margin .3s;
 }
 
 .link-arrow:hover::after {
@@ -185,6 +185,7 @@ p {
   background: linear-gradient(90deg, rgba(2,4,28,1) 26%, rgba(27,12,17,1) 100%, rgba(0,212,255,1) 100%);
   border-radius: 2px solid var(--color-secondary);
   border-radius: 5px;
+  font-size: 2rem;
   width: 12rem;
   height: 12rem;
   color: #fff;
@@ -192,18 +193,34 @@ p {
   padding: 1rem;
 }
 
+.badge-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
 .badge__bold {
   margin: 0;
-  font-size: 2rem;
-  font-weight: 300;
+  font-size: 3rem;
+  font-weight: 700;
 }
 
 .badge--primary {
-  color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 .badge--accent {
   color: var(--color-accent);
+}
+
+.badge--secondary {
+  color: var(--color-secondary);
+}
+
+@media screen and (min-width: 768px) {
+  .badge-group {
+    gap: 4rem;
+  }
 }
 
 /* Icon */
@@ -290,8 +307,11 @@ p {
   margin: 4rem 0;
 }
 
-.block-domain__body {
-  display: flex;
-  justify-content: center;
-  gap: 5rem;
+
+/* Hero */
+
+.hero .block__header {
+  text-align: left;
 }
+
+/* Navigation */
