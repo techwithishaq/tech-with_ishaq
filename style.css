@@ -225,6 +225,11 @@ p {
 
 /* Icon */
 
+.fa-icon {
+  display: inline-flex;
+  gap: 2rem;
+}
+
 .icon {
   width: 40px;
   height: 40px;
@@ -400,4 +405,17 @@ p {
   .nav__item {
     border: 0;
   }
+}
+
+/* Footter */
+
+.footer__list {
+  display: flex;
+  width: auto;
+}
+
+.footer {
+  border-top: 1px solid #fff;
+  background: rgb(2,4,28);
+  background: linear-gradient(90deg, rgba(2,4,28,1) 26%, rgba(27,12,17,1) 100%, rgba(0,212,255,1) 100%);;
 }
