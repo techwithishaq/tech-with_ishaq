@@ -314,4 +314,90 @@ p {
   text-align: left;
 }
 
+/* Collapsibles */
+
+
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all .3s;
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100%;
+  opacity: 1;
+}
+
 /* Navigation */
+
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav {
+  background: #000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+}
+
+.nav__list {
+  width: 100%;
+  margin: 0;
+}
+
+.nav__item {
+  padding: 0.5rem 2rem;
+  border-bottom: 1px solid #222;
+}
+
+.nav__item>a {
+  color: #d2d0db;
+  transition: color .3s;
+}
+
+.nav__item>a:hover {
+  color: #fff;
+}
+
+.nav__togler {
+  opacity: 1;
+}
+
+.nav__togler:hover {
+  opacity: 0.5;
+  transition: box-shadow .3s;
+  cursor: pointer;
+}
+
+.nav__brand {
+  transform: translateY(5px);
+}
+
+.collapsible--expanded .nav__togler {
+  opacity: 1;
+  box-shadow: 0 0 0 3PX #ccc;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__togler {
+    display: none;
+  }
+
+  .nav__list {
+    width: auto;
+    display: flex;
+    max-height: 100%;
+    opacity: 1;
+    font-size: 1.6rem;
+  }
+
+  .nav__item {
+    border: 0;
+  }
+}
