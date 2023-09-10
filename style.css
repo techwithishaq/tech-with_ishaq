@@ -421,11 +421,6 @@ p {
 
 /* Footter */
 
-.footer__list {
-  display: flex;
-  width: auto;
-}
-
 .footer {
   border-top: 1px solid #222;
   background: rgb(2,4,28);
@@ -435,3 +430,10 @@ p {
 .footer .nav {
   background: none;
 }
+
+.footer__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ flex-wrap: nowrap;
+}  
