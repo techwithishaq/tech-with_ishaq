@@ -241,7 +241,7 @@ p {
 .badge {
   background: rgb(2,4,28);
   background: linear-gradient(90deg, rgba(2,4,28,1) 26%, rgba(27,12,17,1) 100%, rgba(0,212,255,1) 100%);
-  border: 2px solid var(--color-secondary);
+  border: 2px solid var(--color-primary);
   border-radius: 5px;
   font-size: 2rem;
   width: 12rem;
@@ -407,7 +407,7 @@ p {
 
 .card {
   border-radius: 7px;
-  box-shadow: 0 0 20px 10px #f3f3f3;
+  border: 1px solid #222;
   overflow: hidden;
 }
 
@@ -529,13 +529,18 @@ p {
 
 /* Plans Block */
 
-.block-plans {
+
+.block-plans .grid {
   gap: 6rem 4rem;
 }
 
 .block-plans .card {
   max-width: 500px;
   margin: 0 auto;
+}
+
+.block-plans .btn--outline {
+  background: #fff;
 }
 
 /* Navigation */
