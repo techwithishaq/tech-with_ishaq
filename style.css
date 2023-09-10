@@ -117,6 +117,57 @@ p {
   }
 }
 
+.btn {
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: 0;
+  margin: 1rem 0;
+  padding: 2rem 4vw;
+  border-radius: 50px;
+  border: 0;
+}
+
+.btn--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.btn--secodary {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+.btn--accent {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+.btn--stretched {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.btn--outline {
+  background: #fff;
+  color: var(--color-headings);
+  border: 1px solid var(--color-headings);
+}
+
+.btn--block {
+  width: 100%;
+  display: inline-block;
+}
+
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
 /* Button */
 
 .btn {
@@ -140,6 +191,12 @@ p {
 @media screen and (min-width: 768px) {
   .grid--1X2 {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--1X3 {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -344,6 +401,141 @@ p {
 .collapsible--expanded .collapsible__content {
   max-height: 100%;
   opacity: 1;
+}
+
+/* Card */
+
+.card {
+  border-radius: 7px;
+  box-shadow: 0 0 20px 10px #f3f3f3;
+  overflow: hidden;
+}
+
+.card__header,
+.card__image {
+  padding: 2rem 3rem;
+}
+
+.card--primary .card__header {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.card--secondary .card__header {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+.card--primary .badge--primary {
+  background: #126de4;
+}
+
+.card--secondary .badge--secondary {
+  background: #00cdf1;
+}
+
+/* Badge */
+
+.badge {
+  border-radius: 20px;
+  font-size: 2rem;
+  font-weight: 200;
+  white-space: nowrap;
+  padding: 0.5rem 1.5rem;
+}
+
+.badge--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.badge--secondary {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+.badge--small {
+  font-size: 1.7rem;
+}
+
+@media screen and (min-width: 1024) {
+  .badge {
+    font-size: 1.5rem;
+  }
+
+  .badge--small {
+    font-size: 1rem;
+  }
+}
+
+/* Plan */
+
+.plan__name {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.plan {
+  transition: transform .2s ease-out;
+}
+
+.plan__price {
+  font-size: 6rem;
+}
+
+.plan__billing-cycle {
+  font-size: 2.4rem;
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+.plan__description {
+  letter-spacing: 4px;
+}
+
+.plan .list__item {
+  margin-bottom: 2rem;
+}
+
+.plan--popular {
+  transform: scale(1.1);
+}
+
+.plan--popular .card__header {
+  position: relative;
+}
+
+
+.plan:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (min-width: 1024px) {
+  .plan__name {
+    font-size: 1.4rem;
+  }
+
+  .plan__price {
+    font-size: 5rem;
+  }
+
+  .plan__billing-cycle {
+    font-size: 1.6rem;
+  }
+}
+
+
+/* Plans Block */
+
+.block-plans {
+  gap: 6rem 4rem;
+}
+
+.block-plans .card {
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 /* Navigation */
