@@ -239,10 +239,8 @@ p {
 /* Badge */
 
 .badge {
-  background: rgb(2,4,28);
-  background: linear-gradient(90deg, rgba(2,4,28,1) 26%, rgba(27,12,17,1) 100%, rgba(0,212,255,1) 100%);
   border: 0;
-  border-radius: 5px;
+  border-radius: 20px;
   font-size: 2rem;
   width: 12rem;
   height: 12rem;
@@ -264,22 +262,39 @@ p {
 }
 
 .badge--primary {
-  color: var(--color-primary);
-}
-
-.badge--accent {
-  color: var(--color-accent);
+  background: var(--color-primary);
+  color: #fff;
 }
 
 .badge--secondary {
-  color: var(--color-secondary);
+  background: var(--color-secondary);
+  color: #fff;
 }
 
-@media screen and (min-width: 768px) {
+.badge--accent {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+.badge--small {
+  font-size: 1.7rem;
+}
+
+@media screen and (min-width: 1024) {
+  .badge {
+    font-size: 1.5rem;
+  }
+
+  .badge--small {
+    font-size: 1rem;
+  }
+
   .badge-group {
     gap: 4rem;
   }
 }
+
+
 
 /* Icon */
 
@@ -441,45 +456,6 @@ p {
 
 .card--accent .badge--accent {
   background: #f10000;
-}
-
-/* Badge */
-
-.badge {
-  border-radius: 20px;
-  font-size: 2rem;
-  font-weight: 200;
-  white-space: nowrap;
-  padding: 0.5rem 1.5rem;
-}
-
-.badge--primary {
-  background: var(--color-primary);
-  color: #fff;
-}
-
-.badge--secondary {
-  background: var(--color-secondary);
-  color: #fff;
-}
-
-.badge--accent {
-  background: var(--color-accent);
-  color: #fff;
-}
-
-.badge--small {
-  font-size: 1.7rem;
-}
-
-@media screen and (min-width: 1024) {
-  .badge {
-    font-size: 1.5rem;
-  }
-
-  .badge--small {
-    font-size: 1rem;
-  }
 }
 
 /* Plan */
