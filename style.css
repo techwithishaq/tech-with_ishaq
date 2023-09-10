@@ -434,6 +434,5 @@ p {
 .footer__list {
   display: flex;
   justify-content: space-around;
-  align-items: center;
  flex-wrap: nowrap;
 }  
