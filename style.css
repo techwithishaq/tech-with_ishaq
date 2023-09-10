@@ -241,7 +241,7 @@ p {
 .badge {
   background: rgb(2,4,28);
   background: linear-gradient(90deg, rgba(2,4,28,1) 26%, rgba(27,12,17,1) 100%, rgba(0,212,255,1) 100%);
-  border: 2px solid var(--color-primary);
+  border: 0;
   border-radius: 5px;
   font-size: 2rem;
   width: 12rem;
@@ -426,12 +426,21 @@ p {
   color: #fff;
 }
 
+.card--accent .card__header {
+  background: var(--color-accent);
+  color: #fff;
+}
+
 .card--primary .badge--primary {
   background: #126de4;
 }
 
 .card--secondary .badge--secondary {
   background: #00cdf1;
+}
+
+.card--accent .badge--accent {
+  background: #f10000;
 }
 
 /* Badge */
@@ -451,6 +460,11 @@ p {
 
 .badge--secondary {
   background: var(--color-secondary);
+  color: #fff;
+}
+
+.badge--accent {
+  background: var(--color-accent);
   color: #fff;
 }
 
@@ -528,7 +542,6 @@ p {
 
 
 /* Plans Block */
-
 
 .block-plans .grid {
   gap: 6rem 4rem;
