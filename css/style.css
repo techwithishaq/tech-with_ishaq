@@ -373,6 +373,10 @@ p {
   margin: 1rem 0;
 }
 
+.feature-block .block__header {
+  text-align: left;
+}
+
 @media screen and (min-width: 768px) {
   .feature:nth-of-type(even) .feature__content {
     order: 2;
@@ -387,6 +391,10 @@ p {
 
 .block-domain .block-domain__body {
   margin: 4rem 0;
+}
+
+.block-domain .block__header {
+  text-align: left;
 }
 
 
