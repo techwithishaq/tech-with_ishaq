@@ -341,7 +341,7 @@ p {
 /* Feature */
 
 .feature {
-  gap: 4rem 2rem;
+  gap: 4rem 8rem;
   margin: 12rem 0;
 }
 
@@ -397,6 +397,12 @@ p {
   text-align: left;
 }
 
+@media screen and (min-width: 768px) {
+  .block-domain .block__header {
+    text-align: center;
+  }
+}
+
 
 /* Hero */
 
@@ -407,7 +413,11 @@ p {
 }
 
 .hero__image {
-  transform: translateY(70px);
+  transform: translateY(5px);
+}
+
+.hero__heading {
+  margin: 0 2rem;
 }
 
 
