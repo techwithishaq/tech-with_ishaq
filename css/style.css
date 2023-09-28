@@ -688,3 +688,17 @@ p {
   justify-content: space-around;
  flex-wrap: nowrap;
 }  
+
+/* form */
+
+.form {
+  background: var(--color-primary);
+}
+
+input, textarea {
+  color: #fff;
+}
+
+.input-group {
+  margin: 2rem 0;
+}
